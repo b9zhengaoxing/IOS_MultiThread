@@ -15,6 +15,7 @@
 		370B6ACB1B2D2B050059B3FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370B6ACA1B2D2B050059B3FB /* Images.xcassets */; };
 		370B6ACE1B2D2B050059B3FB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 370B6ACC1B2D2B050059B3FB /* LaunchScreen.xib */; };
 		370B6ADA1B2D2B050059B3FB /* IOS_MultiThreadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 370B6AD91B2D2B050059B3FB /* IOS_MultiThreadTests.m */; };
+		37F1368B1B2D2E550003ABA0 /* DownloadPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F1368A1B2D2E550003ABA0 /* DownloadPicViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		370B6AD31B2D2B050059B3FB /* IOS_MultiThreadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOS_MultiThreadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		370B6AD81B2D2B050059B3FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		370B6AD91B2D2B050059B3FB /* IOS_MultiThreadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOS_MultiThreadTests.m; sourceTree = "<group>"; };
+		37F136891B2D2E550003ABA0 /* DownloadPicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadPicViewController.h; sourceTree = "<group>"; };
+		37F1368A1B2D2E550003ABA0 /* DownloadPicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadPicViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 		370B6AB91B2D2B050059B3FB /* IOS_MultiThread */ = {
 			isa = PBXGroup;
 			children = (
+				37F136881B2D2E200003ABA0 /* Thread Create  */,
 				370B6ABE1B2D2B050059B3FB /* AppDelegate.h */,
 				370B6ABF1B2D2B050059B3FB /* AppDelegate.m */,
 				370B6AC41B2D2B050059B3FB /* ViewController.h */,
@@ -120,6 +124,15 @@
 				370B6AD81B2D2B050059B3FB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37F136881B2D2E200003ABA0 /* Thread Create  */ = {
+			isa = PBXGroup;
+			children = (
+				37F136891B2D2E550003ABA0 /* DownloadPicViewController.h */,
+				37F1368A1B2D2E550003ABA0 /* DownloadPicViewController.m */,
+			);
+			name = "Thread Create ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +239,7 @@
 				370B6AC31B2D2B050059B3FB /* IOS_MultiThread.xcdatamodeld in Sources */,
 				370B6AC61B2D2B050059B3FB /* ViewController.m in Sources */,
 				370B6ABD1B2D2B050059B3FB /* main.m in Sources */,
+				37F1368B1B2D2E550003ABA0 /* DownloadPicViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +432,7 @@
 				370B6ADF1B2D2B050059B3FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		370B6AE01B2D2B050059B3FB /* Build configuration list for PBXNativeTarget "IOS_MultiThreadTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +441,7 @@
 				370B6AE21B2D2B050059B3FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
