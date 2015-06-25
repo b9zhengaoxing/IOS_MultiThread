@@ -15,6 +15,7 @@
 		370B6ACB1B2D2B050059B3FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370B6ACA1B2D2B050059B3FB /* Images.xcassets */; };
 		370B6ACE1B2D2B050059B3FB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 370B6ACC1B2D2B050059B3FB /* LaunchScreen.xib */; };
 		370B6ADA1B2D2B050059B3FB /* IOS_MultiThreadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 370B6AD91B2D2B050059B3FB /* IOS_MultiThreadTests.m */; };
+		372CDEC81B3B96310076ABB4 /* readme in Resources */ = {isa = PBXBuildFile; fileRef = 372CDEC71B3B96310076ABB4 /* readme */; };
 		37F1368B1B2D2E550003ABA0 /* DownloadPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F1368A1B2D2E550003ABA0 /* DownloadPicViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		370B6AD31B2D2B050059B3FB /* IOS_MultiThreadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOS_MultiThreadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		370B6AD81B2D2B050059B3FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		370B6AD91B2D2B050059B3FB /* IOS_MultiThreadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOS_MultiThreadTests.m; sourceTree = "<group>"; };
+		372CDEC71B3B96310076ABB4 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
 		37F136891B2D2E550003ABA0 /* DownloadPicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadPicViewController.h; sourceTree = "<group>"; };
 		37F1368A1B2D2E550003ABA0 /* DownloadPicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadPicViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 		370B6AAE1B2D2B050059B3FB = {
 			isa = PBXGroup;
 			children = (
+				372CDEC71B3B96310076ABB4 /* readme */,
 				370B6AB91B2D2B050059B3FB /* IOS_MultiThread */,
 				370B6AD61B2D2B050059B3FB /* IOS_MultiThreadTests */,
 				370B6AB81B2D2B050059B3FB /* Products */,
@@ -215,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				372CDEC81B3B96310076ABB4 /* readme in Resources */,
 				370B6AC91B2D2B050059B3FB /* Main.storyboard in Resources */,
 				370B6ACE1B2D2B050059B3FB /* LaunchScreen.xib in Resources */,
 				370B6ACB1B2D2B050059B3FB /* Images.xcassets in Resources */,
