@@ -1,0 +1,70 @@
+//
+//  Synchronization1ViewController.m
+//  IOS_MultiThread
+//
+//  Created by Maculish Ting on 16/7/15.
+//  Copyright (c) 2015年 LYD. All rights reserved.
+//
+
+#import "Synchronization1ViewController.h"
+
+@interface Synchronization1ViewController ()
+
+@end
+
+@implementation Synchronization1ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    tickets = 100;
+    count = 0;
+    theLock = [[NSLock alloc] init];
+    // 锁对象
+    ticketsCondition = [[NSCondition alloc] init];
+    ticketsThreadone = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];
+    [ticketsThreadone setName:@"Thread-1"];
+    [ticketsThreadone start];
+    
+    ticketsThreadtwo = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];
+    [ticketsThreadtwo setName:@"Thread-2"];
+    [ticketsThreadtwo start];
+    
+    NSThread *ticketsThreadthree = [[NSThread alloc] initWithTarget:self selector:@selector(run3) object:nil];
+    [ticketsThreadthree setName:@"Thread-3"];
+    [ticketsThreadthree start];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+-(void)run3{
+    while (YES) {
+        [ticketsCondition lock];
+        [NSThread sleepForTimeInterval:3];
+        [ticketsCondition signal];
+        [ticketsCondition unlock];
+    }
+}
+
+- (void)run{
+    while (TRUE) {
+        // 上锁
+        [ticketsCondition lock];
+        [ticketsCondition wait];
+        [theLock lock];
+        if(tickets >= 0){
+            [NSThread sleepForTimeInterval:0.09];
+            count = 100 - tickets;
+            NSLog(@"当前票数是:%d,售出:%d,线程名:%@",tickets,count,[[NSThread currentThread] name]);
+            tickets--;
+        }else{
+            break;
+        }
+        [theLock unlock];
+        [ticketsCondition unlock];
+    }
+}
+
+@end

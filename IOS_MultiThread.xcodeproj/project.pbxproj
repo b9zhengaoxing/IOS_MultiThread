@@ -15,6 +15,9 @@
 		370B6ACB1B2D2B050059B3FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370B6ACA1B2D2B050059B3FB /* Images.xcassets */; };
 		370B6ACE1B2D2B050059B3FB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 370B6ACC1B2D2B050059B3FB /* LaunchScreen.xib */; };
 		370B6ADA1B2D2B050059B3FB /* IOS_MultiThreadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 370B6AD91B2D2B050059B3FB /* IOS_MultiThreadTests.m */; };
+		372CDECA1B3B99A70076ABB4 /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 372CDEC91B3B99A70076ABB4 /* readme.md */; };
+		3764614E1B5789230081CC60 /* SynchronizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3764614D1B5789230081CC60 /* SynchronizationViewController.m */; };
+		376461511B578AB70081CC60 /* Synchronization1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376461501B578AB70081CC60 /* Synchronization1ViewController.m */; };
 		37F1368B1B2D2E550003ABA0 /* DownloadPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F1368A1B2D2E550003ABA0 /* DownloadPicViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +46,11 @@
 		370B6AD31B2D2B050059B3FB /* IOS_MultiThreadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOS_MultiThreadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		370B6AD81B2D2B050059B3FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		370B6AD91B2D2B050059B3FB /* IOS_MultiThreadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOS_MultiThreadTests.m; sourceTree = "<group>"; };
+		372CDEC91B3B99A70076ABB4 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		3764614C1B5789230081CC60 /* SynchronizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynchronizationViewController.h; sourceTree = "<group>"; };
+		3764614D1B5789230081CC60 /* SynchronizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SynchronizationViewController.m; sourceTree = "<group>"; };
+		3764614F1B578AB70081CC60 /* Synchronization1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Synchronization1ViewController.h; sourceTree = "<group>"; };
+		376461501B578AB70081CC60 /* Synchronization1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Synchronization1ViewController.m; sourceTree = "<group>"; };
 		37F136891B2D2E550003ABA0 /* DownloadPicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadPicViewController.h; sourceTree = "<group>"; };
 		37F1368A1B2D2E550003ABA0 /* DownloadPicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadPicViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +76,7 @@
 		370B6AAE1B2D2B050059B3FB = {
 			isa = PBXGroup;
 			children = (
+				372CDEC91B3B99A70076ABB4 /* readme.md */,
 				370B6AB91B2D2B050059B3FB /* IOS_MultiThread */,
 				370B6AD61B2D2B050059B3FB /* IOS_MultiThreadTests */,
 				370B6AB81B2D2B050059B3FB /* Products */,
@@ -86,6 +95,7 @@
 		370B6AB91B2D2B050059B3FB /* IOS_MultiThread */ = {
 			isa = PBXGroup;
 			children = (
+				3764614B1B57884B0081CC60 /* Thread synchronization */,
 				37F136881B2D2E200003ABA0 /* Thread Create  */,
 				370B6ABE1B2D2B050059B3FB /* AppDelegate.h */,
 				370B6ABF1B2D2B050059B3FB /* AppDelegate.m */,
@@ -124,6 +134,17 @@
 				370B6AD81B2D2B050059B3FB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3764614B1B57884B0081CC60 /* Thread synchronization */ = {
+			isa = PBXGroup;
+			children = (
+				3764614C1B5789230081CC60 /* SynchronizationViewController.h */,
+				3764614D1B5789230081CC60 /* SynchronizationViewController.m */,
+				3764614F1B578AB70081CC60 /* Synchronization1ViewController.h */,
+				376461501B578AB70081CC60 /* Synchronization1ViewController.m */,
+			);
+			name = "Thread synchronization";
 			sourceTree = "<group>";
 		};
 		37F136881B2D2E200003ABA0 /* Thread Create  */ = {
@@ -237,9 +258,12 @@
 			files = (
 				370B6AC01B2D2B050059B3FB /* AppDelegate.m in Sources */,
 				370B6AC31B2D2B050059B3FB /* IOS_MultiThread.xcdatamodeld in Sources */,
+				376461511B578AB70081CC60 /* Synchronization1ViewController.m in Sources */,
 				370B6AC61B2D2B050059B3FB /* ViewController.m in Sources */,
 				370B6ABD1B2D2B050059B3FB /* main.m in Sources */,
+				372CDECA1B3B99A70076ABB4 /* readme.md in Sources */,
 				37F1368B1B2D2E550003ABA0 /* DownloadPicViewController.m in Sources */,
+				3764614E1B5789230081CC60 /* SynchronizationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

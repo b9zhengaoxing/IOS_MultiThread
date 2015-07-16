@@ -4,6 +4,7 @@
 //
 //  Created by Maculish Ting on 15/6/14.
 //http://blog.csdn.net/totogo2010/article/details/8010231
+//http://objccn.io/issue-2-1/
 
 #import "DownloadPicViewController.h"
 #define kURL @"http://avatar.csdn.net/2/C/D/1_totogo2010.jpg"
@@ -42,7 +43,6 @@
     }else{
         //  主线程交互
         [self performSelectorOnMainThread:@selector(updateUI:) withObject:image waitUntilDone:YES];
-    
     }
 }
 
