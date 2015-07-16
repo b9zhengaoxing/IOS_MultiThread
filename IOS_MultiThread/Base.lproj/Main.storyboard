@@ -95,6 +95,15 @@
                                     <segue destination="ETu-hu-D7E" kind="show" id="7I9-8u-Guo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awg-o9-rFh">
+                                <rect key="frame" x="16" y="262" width="60" height="30"/>
+                                <state key="normal" title="线程同步">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eY2-c7-QHA" kind="show" id="5Mg-Z9-u4Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -105,8 +114,10 @@
                             <constraint firstItem="7C8-qj-kdN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XzW-pv-fDy"/>
                             <constraint firstItem="rYv-EE-F50" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Y75-Gw-tGk"/>
                             <constraint firstItem="WsK-1k-rf2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aYL-qP-sv6"/>
+                            <constraint firstItem="Awg-o9-rFh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bAj-w6-Kkp"/>
                             <constraint firstItem="eND-Qz-bg4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bAl-Gu-R1y"/>
                             <constraint firstItem="eND-Qz-bg4" firstAttribute="top" secondItem="rYv-EE-F50" secondAttribute="bottom" constant="8" id="h43-ad-Rsm"/>
+                            <constraint firstItem="Awg-o9-rFh" firstAttribute="top" secondItem="eND-Qz-bg4" secondAttribute="bottom" constant="8" id="ksZ-Pn-PJR"/>
                             <constraint firstItem="7C8-qj-kdN" firstAttribute="top" secondItem="WsK-1k-rf2" secondAttribute="bottom" constant="8" id="yIY-ek-U20"/>
                         </constraints>
                     </view>
@@ -115,6 +126,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-295" y="354"/>
+        </scene>
+        <!--Sync View Controller-->
+        <scene sceneID="WVq-XC-27W">
+            <objects>
+                <viewController id="eY2-c7-QHA" customClass="SyncViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bCq-nB-sXE"/>
+                        <viewControllerLayoutGuide type="bottom" id="RKh-nA-m9j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jun-tW-Lia">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aCj-NR-yPU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51" y="1617"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4CE-M4-5Hu">
