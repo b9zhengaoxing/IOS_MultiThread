@@ -36,7 +36,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5h-mh-Ntp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="482" y="-258"/>
+            <point key="canvasLocation" x="1578" y="-1102"/>
         </scene>
         <!--多线程-->
         <scene sceneID="tne-QT-ifu">
@@ -77,13 +77,24 @@
                                     <segue destination="Ki6-r3-Xyn" kind="show" id="SIn-i5-IKf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYv-EE-F50">
+                                <rect key="frame" x="16" y="186" width="89" height="30"/>
+                                <state key="normal" title="NSOperation">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7dH-U8-ZnK" kind="show" id="wXf-tB-Xqc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6wf-Jp-P1f" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="0ET-Nv-0uE"/>
                             <constraint firstItem="6wf-Jp-P1f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6Fz-uP-yvX"/>
+                            <constraint firstItem="rYv-EE-F50" firstAttribute="top" secondItem="7C8-qj-kdN" secondAttribute="bottom" constant="8" id="M2c-hJ-lHT"/>
                             <constraint firstItem="WsK-1k-rf2" firstAttribute="top" secondItem="6wf-Jp-P1f" secondAttribute="bottom" constant="8" id="VW0-Ji-A8f"/>
                             <constraint firstItem="7C8-qj-kdN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XzW-pv-fDy"/>
+                            <constraint firstItem="rYv-EE-F50" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Y75-Gw-tGk"/>
                             <constraint firstItem="WsK-1k-rf2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aYL-qP-sv6"/>
                             <constraint firstItem="7C8-qj-kdN" firstAttribute="top" secondItem="WsK-1k-rf2" secondAttribute="bottom" constant="8" id="yIY-ek-U20"/>
                         </constraints>
@@ -93,6 +104,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-295" y="354"/>
+        </scene>
+        <!--Operation View Controller-->
+        <scene sceneID="lQl-tf-VVF">
+            <objects>
+                <viewController id="7dH-U8-ZnK" customClass="NSOperationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aiE-DG-RBh"/>
+                        <viewControllerLayoutGuide type="bottom" id="qht-yJ-RyW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2rU-Ey-R05">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bfg-js-NTy">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bfg-js-NTy" firstAttribute="leading" secondItem="2rU-Ey-R05" secondAttribute="leadingMargin" constant="-16" id="C4C-XG-wyQ"/>
+                            <constraint firstItem="qht-yJ-RyW" firstAttribute="top" secondItem="bfg-js-NTy" secondAttribute="bottom" id="I4R-JU-9z3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bfg-js-NTy" secondAttribute="trailing" constant="-16" id="NU1-Je-XAX"/>
+                            <constraint firstItem="bfg-js-NTy" firstAttribute="top" secondItem="2rU-Ey-R05" secondAttribute="topMargin" id="lvi-BR-D1S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="bfg-js-NTy" id="02f-J8-rk9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i1j-LM-eBy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="421" y="940"/>
         </scene>
         <!--Synchronization View Controller-->
         <scene sceneID="qUe-gv-tO3">
@@ -110,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v19-pG-EEW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="493" y="420"/>
+            <point key="canvasLocation" x="1589" y="-424"/>
         </scene>
         <!--Synchronization1 View Controller-->
         <scene sceneID="73U-ZV-KyH">
@@ -128,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ADy-7H-vh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="493" y="1099"/>
+            <point key="canvasLocation" x="1589" y="255"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aMy-U5-3ul">

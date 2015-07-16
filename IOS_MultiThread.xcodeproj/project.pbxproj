@@ -18,6 +18,7 @@
 		372CDECA1B3B99A70076ABB4 /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 372CDEC91B3B99A70076ABB4 /* readme.md */; };
 		3764614E1B5789230081CC60 /* SynchronizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3764614D1B5789230081CC60 /* SynchronizationViewController.m */; };
 		376461511B578AB70081CC60 /* Synchronization1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376461501B578AB70081CC60 /* Synchronization1ViewController.m */; };
+		376461561B5790770081CC60 /* NSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376461551B5790770081CC60 /* NSOperationViewController.m */; };
 		37F1368B1B2D2E550003ABA0 /* DownloadPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F1368A1B2D2E550003ABA0 /* DownloadPicViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,8 @@
 		3764614D1B5789230081CC60 /* SynchronizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SynchronizationViewController.m; sourceTree = "<group>"; };
 		3764614F1B578AB70081CC60 /* Synchronization1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Synchronization1ViewController.h; sourceTree = "<group>"; };
 		376461501B578AB70081CC60 /* Synchronization1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Synchronization1ViewController.m; sourceTree = "<group>"; };
+		376461541B5790770081CC60 /* NSOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSOperationViewController.h; sourceTree = "<group>"; };
+		376461551B5790770081CC60 /* NSOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSOperationViewController.m; sourceTree = "<group>"; };
 		37F136891B2D2E550003ABA0 /* DownloadPicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadPicViewController.h; sourceTree = "<group>"; };
 		37F1368A1B2D2E550003ABA0 /* DownloadPicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadPicViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,8 +98,8 @@
 		370B6AB91B2D2B050059B3FB /* IOS_MultiThread */ = {
 			isa = PBXGroup;
 			children = (
-				3764614B1B57884B0081CC60 /* Thread synchronization */,
-				37F136881B2D2E200003ABA0 /* Thread Create  */,
+				376461521B578E700081CC60 /* Thread */,
+				376461531B578E810081CC60 /* NSOperation */,
 				370B6ABE1B2D2B050059B3FB /* AppDelegate.h */,
 				370B6ABF1B2D2B050059B3FB /* AppDelegate.m */,
 				370B6AC41B2D2B050059B3FB /* ViewController.h */,
@@ -145,6 +148,24 @@
 				376461501B578AB70081CC60 /* Synchronization1ViewController.m */,
 			);
 			name = "Thread synchronization";
+			sourceTree = "<group>";
+		};
+		376461521B578E700081CC60 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				3764614B1B57884B0081CC60 /* Thread synchronization */,
+				37F136881B2D2E200003ABA0 /* Thread Create  */,
+			);
+			name = Thread;
+			sourceTree = "<group>";
+		};
+		376461531B578E810081CC60 /* NSOperation */ = {
+			isa = PBXGroup;
+			children = (
+				376461541B5790770081CC60 /* NSOperationViewController.h */,
+				376461551B5790770081CC60 /* NSOperationViewController.m */,
+			);
+			name = NSOperation;
 			sourceTree = "<group>";
 		};
 		37F136881B2D2E200003ABA0 /* Thread Create  */ = {
@@ -264,6 +285,7 @@
 				372CDECA1B3B99A70076ABB4 /* readme.md in Sources */,
 				37F1368B1B2D2E550003ABA0 /* DownloadPicViewController.m in Sources */,
 				3764614E1B5789230081CC60 /* SynchronizationViewController.m in Sources */,
+				376461561B5790770081CC60 /* NSOperationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
