@@ -86,6 +86,15 @@
                                     <segue destination="7dH-U8-ZnK" kind="show" id="wXf-tB-Xqc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eND-Qz-bg4">
+                                <rect key="frame" x="16" y="224" width="34" height="30"/>
+                                <state key="normal" title="GCD">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ETu-hu-D7E" kind="show" id="7I9-8u-Guo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -96,6 +105,8 @@
                             <constraint firstItem="7C8-qj-kdN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XzW-pv-fDy"/>
                             <constraint firstItem="rYv-EE-F50" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Y75-Gw-tGk"/>
                             <constraint firstItem="WsK-1k-rf2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aYL-qP-sv6"/>
+                            <constraint firstItem="eND-Qz-bg4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bAl-Gu-R1y"/>
+                            <constraint firstItem="eND-Qz-bg4" firstAttribute="top" secondItem="rYv-EE-F50" secondAttribute="bottom" constant="8" id="h43-ad-Rsm"/>
                             <constraint firstItem="7C8-qj-kdN" firstAttribute="top" secondItem="WsK-1k-rf2" secondAttribute="bottom" constant="8" id="yIY-ek-U20"/>
                         </constraints>
                     </view>
@@ -104,6 +115,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-295" y="354"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4CE-M4-5Hu">
+            <objects>
+                <viewController id="ETu-hu-D7E" customClass="GCDViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gwy-NA-bvc"/>
+                        <viewControllerLayoutGuide type="bottom" id="XKK-o3-lbF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ydc-9o-AVT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bm4-lq-DQ7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bm4-lq-DQ7" firstAttribute="top" secondItem="Ydc-9o-AVT" secondAttribute="topMargin" id="9DW-6S-l2T"/>
+                            <constraint firstItem="Bm4-lq-DQ7" firstAttribute="leading" secondItem="Ydc-9o-AVT" secondAttribute="leadingMargin" constant="-16" id="BTM-9l-feV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bm4-lq-DQ7" secondAttribute="trailing" constant="-16" id="KV9-3J-0ta"/>
+                            <constraint firstItem="XKK-o3-lbF" firstAttribute="top" secondItem="Bm4-lq-DQ7" secondAttribute="bottom" id="dSI-kY-LLy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Bm4-lq-DQ7" id="3NV-sP-RIa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bcv-4o-EWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1589" y="1728"/>
         </scene>
         <!--Operation View Controller-->
         <scene sceneID="lQl-tf-VVF">
@@ -135,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i1j-LM-eBy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="421" y="940"/>
+            <point key="canvasLocation" x="1589" y="1056"/>
         </scene>
         <!--Synchronization View Controller-->
         <scene sceneID="qUe-gv-tO3">

@@ -2,7 +2,7 @@
 //  DownloadPicViewController.m
 //  IOS_MultiThread
 //
-//  Created by Maculish Ting on 15/6/14.
+//  Created by litengfei on 15/6/14.
 //http://blog.csdn.net/totogo2010/article/details/8010231
 //http://objccn.io/issue-2-1/
 
